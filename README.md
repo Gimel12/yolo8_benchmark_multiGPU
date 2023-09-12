@@ -1,17 +1,19 @@
-# Installing the conda environment 
+# Installing the conda environment, downloading dataset and running the code
 ```bash
 cd /home/bizon/
+#wget https://www.dropbox.com/scl/fi/i0bta55fjdudgxt3lkyjt/healthcheck.zip?rlkey=hsqii5eob90bpu865zliyda8s&dl=0 # replace the link with the correct one
+#mv xxxxx 
+unzip yolo_dataset.zip
+git clone https://github.com/technopremium/yolo8_benchmark_multiGPU.git
+cd yolo8_benchmark_multiGPU
 conda env create -f environment.yml
-conda activate testenv
+conda activate testenv 
+pip install opencv-python
+cd /home/bizon/healthcheck/ultralytics
 ```
 
-# Download the data
+# Parameters to run the training 
 ```bash
-wget https://www.dropbox.com/s/2x0qzq5q0wq0y5o/data.zip # replace the link with the correct one
-unzip data.zip
+python train_test.py --batch 16 --device 0 1 --epochs 100
 ```
 
-# Run the code
-```bash
-./run_yolo_test.sh
-```
