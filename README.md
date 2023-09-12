@@ -16,4 +16,15 @@ cd /home/bizon/healthcheck/ultralytics
 ```bash
 python train_test.py --batch 8 --device 0 --epochs 60
 ```
+# IPMI tool monitoring installation
+```bash
+sudo apt install ipmitool
+sudo modprobe ipmi_si
+sudo ipmitool sdr
+chmod +x monitor.sh
+```
+
+
+
+
 
