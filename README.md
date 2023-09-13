@@ -1,11 +1,16 @@
-# Installing the conda environment, downloading dataset and running the code
+# Automated mode 
+```bash
+/bin/bash -c "$(curl -fsSL https://bizon-vm.s3.amazonaws.com/Install_yolo_training.sh)"
+```
+
+
+# Installing the conda environment, downloading dataset and running the code `Manually`
 ```bash
 cd /home/bizon/
 git clone https://github.com/technopremium/yolo8_benchmark_multiGPU.git
 cd yolo8_benchmark_multiGPU
 conda env create -f environment.yml
 conda activate testenv 
-pip install opencv-python
 cp healthcheck.zip /home/bizon/
 cd /home/bizon/
 unzip healthcheck.zip
