@@ -6,7 +6,7 @@ channels:
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
-  - opencv-python==4.8.0.76
+  #- opencv-python==4.8.0.76
   - blas=1.0=mkl
   - brotlipy=0.7.0=py310h7f8727e_1002
   - bzip2=1.0.8=h7b6447c_0
@@ -102,6 +102,7 @@ dependencies:
   - zstd=1.5.5=hc292b87_0
   - pip:
       - contourpy==1.1.0
+      - opencv-python==4.8.0.76
       - cycler==0.11.0
       - fonttools==4.42.1
       - kiwisolver==1.4.5
