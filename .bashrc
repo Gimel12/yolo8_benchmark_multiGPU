@@ -281,4 +281,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-dl-SOCram() {  read -p 'Enter GPUs to use (e.g., 0,1,2,3): ' GPUs;  read -p 'Enter batch size (e.g., 8): ' batch_size;  read -p 'Enter number of epochs (e.g., 60): ' epochs;  cd /home/bizon/healthcheck/ultralytics && python train_test.py --batch $batch_size --device $GPUs --epochs $epochs;}
+alias dl-SOCram='cd /home/bizon/healthcheck/ultralytics && python setup_and_train.py'
