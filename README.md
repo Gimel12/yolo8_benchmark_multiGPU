@@ -68,6 +68,18 @@ if __name__ == "__main__":
     modify_and_run_training(batch, epochs, device)
 ```
 
+# GUI app 
+```
+# Start the environment:
+conda activate testenv
+# Run the gui
+Python3 gui.py
+
+# If permission issues:
+sudo chown 777 config.json
+sudo chmod 777 config.json
+```
+
 
 
 
