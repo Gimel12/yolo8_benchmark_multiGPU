@@ -1,4 +1,7 @@
 import json
+import os
+os.environ['MKL_SERVICE_FORCE_INTEL'] = '1' ## comment this if using AMD CPUs 
+import numpy as np
 from ultralytics import YOLO
 
 # Load configuration from JSON file
